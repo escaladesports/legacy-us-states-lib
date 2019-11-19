@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "analyze": "esca-scripts analyze --component --input  ./src/index.js",
-    "build": "esca-scripts build --component --babel --input src --output dist --multiple",
+    "build": "esca-scripts build --component --babel --input src --output dist --multiple && rsync -ar src/data/ dist/data/",
     "dev": "esca-scripts dev --input './dev/dev.js, ./dev/index.html' --react --browser",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",

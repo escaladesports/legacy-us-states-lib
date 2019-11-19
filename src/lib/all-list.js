@@ -3,14 +3,12 @@ Object.defineProperty(exports, "__esModule", {
 })
 
 exports.default = void 0
-const dc = require('./dc-list.js').data()
-const insular = require('./insular-list.js').data()
-const state = require('./state-list.js').data()
 
-console.log(`dc`, dc)
-console.log(`insular`, insular)
-console.log(`state`, state)
+const dc = require('../data/dc-abbrv.json')
+const insular = require('../data/insular-abbrv.json')
+const state = require('../data/state-abbrv.json')
 
-const list = [ ...dc, ...insular, ...state ]
-exports["default"] = list
+const _list = { ...dc,  ...insular, ...state }
+
+exports["default"] = _list
 module.exports = exports["default"]
