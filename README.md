@@ -10,21 +10,21 @@ Module accepts a JSON array of options that modifies the return:
 
 ## Examples
 
-```
+```js
 let names = require('@escaladesports/us-states-lib')
 
 console.log(names.stateList())
-# returns ["Alabama","Alaska","Arizona","Arkansas","California","Colorado" ...
+// returns ["Alabama","Alaska","Arizona","Arkansas","California","Colorado" ...
 
 console.log(names.stateList('["state-list", "dc-list"]'))
-# returns  ["Alabama","Alaska", ... "Washington, DC", "West Virginia" ...
+// returns  ["Alabama","Alaska", ... "Washington, DC", "West Virginia" ...
 
 console.log(names.stateList('["state-abbrv"]'))
-# returns {"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", ...
+// returns {"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", ...
 
 // Mixing return types
 console.log(names.stateList('["state-list", "dc-abbrv"]'))
-#returns 
+// returns 
 US-State-Lib input mismatch. args were:, state-list dc-abbrv
 {0: "Alabama", 1: "Alaska", 2: "Arizona", 3: "Arkansas" ... "DC": "Washington, DC" ...
 ```
