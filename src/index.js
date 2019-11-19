@@ -52,7 +52,7 @@ export function getStateList(args) {
 		} else if ( !outArray.length && Object.keys(outObj).length ) {
 			return outObj
 		} else {
-			console.log(`US-State-Lib input mismatch. args were:`, args)
+			console.warn(`US-State-Lib input mismatch. args were:`, args)
 			return {...outObj, ...outArray}
 		}
 

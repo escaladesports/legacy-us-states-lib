@@ -1,12 +1,15 @@
-# US State Names
+# US State Names :us:
+
 Returns an array of the 50 US States by default
 
-Module accepts a JSON array of options that modifies the return
+Module accepts a JSON array of options that modifies the return:
 
-Array return options: state-list, dc-list, insular-list, all-list
-Object return options: state-abbrv, dc-abbrv, insular-abbrv, all-abbrv
+1. Array return options: state-list, dc-list, insular-list, all-list
+
+2. Object return options: state-abbrv, dc-abbrv, insular-abbrv, all-abbrv
 
 ## Examples
+
 ```
 let names = require('@escaladesports/us-states-lib')
 
