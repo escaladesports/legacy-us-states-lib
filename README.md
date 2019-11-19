@@ -24,7 +24,7 @@ console.log(names.stateList('["state-abbrv"]'))
 
 // Mixing return types
 console.log(names.stateList('["state-list", "dc-abbrv"]'))
-// returns 
+// returns
 // US-State-Lib input mismatch. args were:, state-list dc-abbrv
-{0: "Alabama", 1: "Alaska", 2: "Arizona", 3: "Arkansas" ... "DC": "Washington, DC" ...
+// {0: "Alabama", 1: "Alaska", 2: "Arizona", 3: "Arkansas" ... "DC": "Washington, DC" ...
 ```
